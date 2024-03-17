@@ -1,0 +1,24 @@
+.overlay {
+  position: fixed;
+  opacity: 0;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlayEnterActive {
+  opacity: 0;
+}
+
+.overlayEnterDone {
+  opacity: 1;
+}
+
+.overlayExitActive {
+  opacity: 0;
+}
+
+.overlayExit {
+  opacity: 0;
+}

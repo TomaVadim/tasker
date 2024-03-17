@@ -1,0 +1,29 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  z-index: 1000;
+  height: 100svh;
+  overflow-x: hidden;
+  transition: left 0.3s ease;
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+  }
+  width: 20%;
+}
+
+.sidebarEnterActive {
+  left: 0;
+}
+
+.sidebarEnterDone {
+  left: 0;
+}
+
+.sidebarExitActive {
+  left: -110%;
+}
+
+.sidebarExit {
+  left: 0;
+}
