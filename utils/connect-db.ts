@@ -1,5 +1,4 @@
 import mongoose, { ConnectOptions } from "mongoose";
-import { ENV_VARIABLES } from "@/types/env-variables";
 
 let isConnected = false;
 
@@ -16,7 +15,7 @@ export const connectDB = async () => {
   }
 
   try {
-    await mongoose.connect(ENV_VARIABLES.MONGODB_URI, connectOptions);
+    await mongoose.connect(process.env.MONGODB_URI as string, connectOptions);
 
     isConnected = true;
     console.log("MongoDB connected");
