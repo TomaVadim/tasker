@@ -30,7 +30,13 @@ export const Header = () => {
 
           <button aria-label="Open Profile">
             <Image
-              src={session?.user?.image}
+              src={
+                session?.user?.image ? (
+                  session?.user?.image
+                ) : (
+                  <div className="bg-gray-200 h-10 w-10 rounded-full"></div>
+                )
+              }
               className="rounded-full"
               alt="profile"
               width={40}
