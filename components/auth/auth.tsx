@@ -28,7 +28,7 @@ export const Auth = () => {
 
         <button
           onClick={handleClickSignIn}
-          className="flex justify-center gap-3 items-center py-2 px-4 bg-blue-500 text-white rounded-md"
+          className="flex justify-center gap-3 items-center py-2 px-4 bg-primary text-white rounded-md"
         >
           <span>Sign In</span>
           <FontAwesomeIcon width={20} icon={faArrowRightToBracket} />

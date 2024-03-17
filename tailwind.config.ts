@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      ...require("tailwindcss/colors"),
       primary: "#3b82f6",
     },
     extend: {

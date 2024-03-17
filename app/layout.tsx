@@ -25,7 +25,6 @@ export default function RootLayout({
         <SessionProvider>
           <ThemeProvider>
             <Header />
-
             <main className="container mx-auto grow px-3">{children}</main>
             <footer className="container mx-auto grow-0 px-3 py-3 flex justify-center">
               <span className="text-sm text-gray-500">© Tacker 2024</span>
